@@ -1,2 +1,12 @@
-# flask_docker_template
-Docker Instance with PYTHON-FLASK-NGINX-GUNICORN for Microservices Architecture.
+# Inicializar o app
+ > py -m wsgi
+
+# Pegando versionamento dos pacotes
+> pip freeze > requirements.txt
+
+# Utilizando o Dockerfile:
+Executando a Build do Contêiner
+> docker build -t rottina:latest .
+
+Rodando a aplicação 
+> docker run -p 80:5000 rottina:latest
